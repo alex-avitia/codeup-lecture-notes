@@ -8,12 +8,12 @@
     <form action="https://request-inspector.glitch.me">
         <label>
             Email
-            <input type="email" name="email">
+            <input type="email" name="email" placeholder="Your email">
         </label>
         <br>
 
         <label for="zipCodeInput">Zip Code</label>
-        <input id="zipCodeInput" name="zipCode" type="number" placeholder="12345">
+        <input id="zipCodeInput" required name="zipCode" type="number" placeholder="12345">
         <br>
 
         <label>
@@ -25,6 +25,23 @@
         <br>
 
         <textarea name="textArea" placeholder="Put your bio here."></textarea>
+        <br>
+        <input type="checkbox" name="locatedInTX">Do you live in the state of Texas?
+        <br>
+
+        A <input type="radio" name="quiz_question_1" value="loves flowers"><br>
+        B <input type="radio" name="quiz_question_1" value="loves cookies"><br>
+        C <input type="radio" name="quiz_question_1" value="loves coffee"><br>
+        D <input type="radio" name="quiz_question_1" value="loves tea"><br>
+
+        <br>
+
+        <h3>What kind of coffee do you like?</h3>
+        <select name="coffee_preference">
+            <option value="light">Light Roast</option>
+            <option value="dark">Dark Roast</option>
+            <option disabled value="espresso">Espresso blend</option>
+        </select>
 
         <input type="submit">
     </form>
