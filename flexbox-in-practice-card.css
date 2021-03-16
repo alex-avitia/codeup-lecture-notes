@@ -67,17 +67,14 @@ i {
 .text-section {
     position: relative;
     bottom: 1.5em;
+    border-bottom: solid grey;
 }
 .icons i {
     font-size: 2.2em;
 }
 .boundary {
     display: flex;
-    flex-direction: row;
-    background-color: darkorange;
-    justify-content: center;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 2em;
-
+    flex-flow: row wrap;
+    padding: 0 7em 0 7em;
+    border-top: 1px solid black;
 }
