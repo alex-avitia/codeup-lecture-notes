@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM Lecture</title>
+</head>
+<body>
+
+    <script>
+        "use strict";
+
+        var count = 0;
+        var max = 10;
+        var interval = 1000; //one second
+
+        var intervalId = setInterval(function(){
+            if(count >= max) {
+                console.log("All done.");
+                clearInterval(intervalId);
+            } else {
+                console.log("Interval number: " + count);
+                count++;
+            }
+
+        }, interval);
+
+        var delay = 10000;
+
+        var timeoutId = setTimeout(function(){
+            alert("I'm here in 10 seconds");
+        }, delay);
+    </script>
+
+</body>
+</html>
